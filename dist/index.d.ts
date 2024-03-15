@@ -1,3 +1,4 @@
+import { API } from 'homebridge';
 /**
  * This method registers the platform with Homebridge
  */

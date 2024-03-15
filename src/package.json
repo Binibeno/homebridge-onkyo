@@ -1,8 +1,8 @@
 {
-  "name": "homebridge-onyko-rebooted",
+  "name": "homebridge-onkyo",
   "version": "2022.18.1",
   "description": "Homebridge plugin for Onkyo Receivers",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "pretest": "eslint --ignore-path .gitignore package.json config.schema.json",
     "test": "xo",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Binibeno/homebridge-onkyo"
+    "url": "git+https://github.com/ToddGreenfield/homebridge-onkyo.git"
   },
   "dependencies": {
     "async": "*",
@@ -19,19 +19,19 @@
     "polling-to-event": "^2.1.0"
   },
   "devDependencies": {
-    "@types/node": "^18.16.20",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
     "eslint": ">=7.30.0",
     "eslint-plugin-ava": "^13.2.0",
     "eslint-plugin-json": "^3.0.0",
     "eslint-plugin-unicorn": "latest",
     "homebridge": "^1.7.0",
+    "xo": ">=0.47.0",
+    "@types/node": "^18.16.20",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
     "nodemon": "^2.0.22",
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.5",
-    "xo": ">=0.47.0"
+    "typescript": "^4.9.5"
   },
   "keywords": [
     "homebridge-plugin",
@@ -88,5 +88,4 @@
       ]
     }
   }
- 
 }

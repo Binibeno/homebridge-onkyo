@@ -1,0 +1,91 @@
+{
+    "name": "homebridge-onkyo",
+    "version": "2022.18.1",
+    "description": "Homebridge plugin for Onkyo Receivers",
+    "main": "index.js",
+    "scripts": {
+        "pretest": "eslint --ignore-path .gitignore package.json config.schema.json",
+        "test": "xo",
+        "watch": "npm run build && npm link && nodemon",
+        "build": "rimraf ./dist && tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ToddGreenfield/homebridge-onkyo.git"
+    },
+    "dependencies": {
+        "async": "*",
+        "js-yaml": "*",
+        "polling-to-event": "^2.1.0"
+    },
+    "devDependencies": {
+        "eslint": ">=7.30.0",
+        "eslint-plugin-ava": "^13.2.0",
+        "eslint-plugin-json": "^3.0.0",
+        "eslint-plugin-unicorn": "latest",
+        "homebridge": "^1.7.0",
+        "xo": ">=0.47.0",
+        "@types/node": "^18.16.20",
+        "@typescript-eslint/eslint-plugin": "^5.62.0",
+        "@typescript-eslint/parser": "^5.62.0",
+        "nodemon": "^2.0.22",
+        "rimraf": "^3.0.2",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.5"
+    },
+    "keywords": [
+        "homebridge-plugin",
+        "homebridge",
+        "onkyo-avr",
+        "onkyo"
+    ],
+    "engines": {
+        "node": ">=14.19.1",
+        "homebridge": ">=1.4.0"
+    },
+    "author": "gw-wiscon <gw.wiscon@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ToddGreenfield/homebridge-onkyo/issues"
+    },
+    "homepage": "https://github.com/ToddGreenfield/homebridge-onkyo#readme",
+    "xo": {
+        "space": false,
+        "ignores": "eiscp",
+        "rules": {
+            "unicorn/prefer-module": "warn",
+            "unicorn/no-new-array": "warn",
+            "unicorn/no-array-for-each": "warn",
+            "camelcase": "off",
+            "kebabCase": "off",
+            "no-mixed-spaces-and-tabs": "warn",
+            "no-useless-escape": "warn",
+            "indent": "off",
+            "quotes": "warn",
+            "capitalized-comments": "off",
+            "no-var": "warn",
+            "prefer-destructuring": "off",
+            "prefer-arrow-callback": "warn",
+            "object-shorthand": [
+                "off",
+                "always",
+                {
+                    "ignoreConstructors": true
+                }
+            ],
+            "quote-props": "error",
+            "no-unused-vars": "warn",
+            "curly": [
+                "error",
+                "multi-or-nest",
+                "consistent"
+            ],
+            "no-use-before-define": [
+                "error",
+                {
+                    "classes": false
+                }
+            ]
+        }
+    }
+}

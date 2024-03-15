@@ -5,7 +5,7 @@ import { API, Logger, PlatformAccessory, Service, Characteristic , DynamicPlatfo
 // let Charact
 let RxInputs
 import pollingtoevent from 'polling-to-event';
-import info from '../package.json';
+import info from './package.json';
 class OnkyoPlatform implements DynamicPlatformPlugin {
 	private receivers;
 	private receiverAccessories;
