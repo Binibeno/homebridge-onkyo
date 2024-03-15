@@ -4,7 +4,7 @@ let Service;
 let Characteristic;
 let RxInputs;
 const pollingtoevent = require('polling-to-event');
-const info = require('./package.json');
+const info = require('../package.json');
 
 class OnkyoPlatform {
 	constructor(log, config, api) {
@@ -166,7 +166,7 @@ class OnkyoAccessory {
 
 	createRxInput() {
 	// Create the RxInput object for later use.
-		const eiscpDataAll = require('./eiscp/eiscp-commands.json');
+		const eiscpDataAll = require('../eiscp/eiscp-commands.json');
 		const inSets = [];
 		let set;
 /* eslint guard-for-in: "off" */
